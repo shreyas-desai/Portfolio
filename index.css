@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 *{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
   font-family: "Nunito",sans-serif;
 }
 body{
   margin: 0px;
-  font-family: 'seoge ui';
+  font-family: monteserrat;
   background-color: #3e3f42;
   background-size: 105%;
 }
@@ -23,84 +27,106 @@ body{
   margin-right: 20px;
   color: whitesmoke;
   margin-top: 10%;
+  text-align: center;
   font-family: 'arial';
 
 }
-.nav{
-  height: 50px;
+nav{
+  height: 80px;
   width: 100%;
-  background-color:  #fff;
+  background:  #fff;
   position: relative;
 }
-.nav>.nav-header{
-  display: inline;
+label.logo{
+  color: black;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
-.nav>.nav-header>.nav-title{
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+}
+nav ul li{
   display: inline-block;
-  font-family: Arial,Helvetica, sans-serif;
-  padding: 10 px 10px 10px 10px;
-  font-size: 40px;
-  margin-left: 15px;
-  color: #3e3f42;
-  font-weight: 550;
+  line-height: 80px;
+  margin: 0 5px;
 }
-.nav>.nav-btn{
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
   display: none;
 }
-.nav>#nav-check{
+#check{
   display: none;
 }
-.nav > .nav-links {
-    font-size: 18px;
-    display: inline;
-    float: right;
-
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
   }
-  .nav > .nav-links > ul li a{
-    color: #fff;
-    line-height: 40px;
-    font-size: 18px;
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
     display: block;
-    padding: 0 8px;
-    text-decoration: none;
+  }
+  ul{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a.hover,a.active{
+    background: black;
+    color: whitesmoke;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .content, .about, .abt_body{
+    width: 50%;
+    float: right;
+  }
 
-  }
-  .nav > .nav-links > ul{
-    list-style: none;
-    position: relative;
-    padding: 0;
-    margin-top: 5px;
-    
-  }
-  .nav > .nav-links > ul li{
-    display: inline-block;
-    background-color: #3e3f42; 
-    border-radius: 5px;
-  }
-  .nav > .nav-links > ul li:hover{
-      background-color: #5a6170;
-      border-radius: 5px;
-  }
-  .nav .nav-links ul a.icon{
-    margin-left: 80px;
-    margin-right: 10px;
-  }
-  .nav .nav-links ul a i{
-    padding: 7px;
-    margin-left: 5px;
-    background-color: #fff;
-    border-radius: 50px;
-  }
-
+}
+}
   .abt_body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    min-height: 15 vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    margin: auto;
+    /*margin-right: 10px;*/
+    width: 50%;
+    padding: 10px;
   }
   .skills{
     width: 100%;
@@ -151,7 +177,7 @@ body{
 
 
 
-  @media screen and (max-width: 750px){
+/*  @media screen and (max-width: 750px){
     .nav>.nav-btn{
       display: inline-block;
       position: absolute;
@@ -210,7 +236,7 @@ body{
         height: calc(100vh - 50px);
         overflow-y: auto;
     }
-}
+}*/
 .contact{
   margin: auto;
   position: realtive;
