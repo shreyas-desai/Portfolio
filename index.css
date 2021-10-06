@@ -41,7 +41,7 @@ label.logo{
   color: black;
   font-size: 35px;
   line-height: 80px;
-  padding: 0 100px;
+  padding: 0 70px;
   font-weight: bold;
 }
 nav ul{
@@ -78,7 +78,7 @@ a.active,a:hover{
 #check{
   display: none;
 }
-@media (max-width: 952px){
+@media (max-width: 700px){
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -87,7 +87,15 @@ a.active,a:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  height: 25px;
+  background: white;
+}
+@media (max-width: 600px){
   .checkbtn{
     display: block;
   }
@@ -127,6 +135,7 @@ a.active,a:hover{
     /*margin-right: 10px;*/
     width: 50%;
     padding: 10px;
+    align-content: center;
   }
   .skills{
     width: 100%;
@@ -175,6 +184,68 @@ a.active,a:hover{
     transform: translateX(50%) rotate(45deg);
   }
 
+
+
+/*  @media screen and (max-width: 750px){
+    .nav>.nav-btn{
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav>.nav-btn>label{
+      display: inline-block;
+      width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav>.nav-btn>label: hover,.nav #nav-check:checked~ .nav-btn>label{
+      background-color: rgba(0,0,255,0.3);
+    }
+    .nav>.nav-btn>label>span{
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+
+    }
+    .nav>.nav-links{
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+
+    }
+    .nav > .nav-links>ul li a{
+      display: block;
+      width: 100%;
+    }
+    .nav>.nav-links>ul li{
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+      background-color: #333;
+    }
+    .nav>.nav-links>ul li a{
+      margin-left: 40%;
+    }
+    
+    .nav>.nav-links ul a.icon{
+      margin-left: 33%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links{
+      height: 0px;
+    }
+    .nav> #nav-check:checked ~ .nav-links{
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}*/
 .contact{
   margin: auto;
   position: realtive;
