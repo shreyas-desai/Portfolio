@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio Website</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class = 'nav'>
+		<div class="nav-header">
+			<div class="nav-title">
+				About	
+			</div>
+		</div>
+		<div class="nav-btn">
+			<label for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+		</div>
+		<div class='nav-links'>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="projects.html">Projects and Works</a></li>
+				<!-- <li><a href="#">Portfolio</a></li> -->
+				<li><a href="contact.html">Contact</a></li>
+				<a class="icon">
+					<a href="https://www.github.com/shreyas-desai"><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/shreyas-desai-3008"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.gmail.com/"><i class="fa fa-at"></i></a>
+
+				</a>
+			</ul>
+		</div>
+	</div>
+	<div class="about">
+		<h3>So, I am a Computer Science undergrad, currently in my final year of graduation. I am actively searching for job opportunities in machine learning field as well as in software development. I have a lot of interest in working with data analytics as well as AI. I have been studying data science for the past few months and I can say I have a quite good hold of it.😁</h3>
+		<h3>I have been working with quite a few languages now and I have quite a good grasp over all of them.</h3>
+	</div>
+	<div class="abt_body">
+		<div class="skills">
+			<div class="skill">
+				<div class="skill-name">Python</div>
+				<div class="skill-bar">
+					<div class="skill-per" per = 75></div>
+				</div
+			</div>
+			<div class="skill">
+				<div class="skill-name">C/C++</div>
+				<div class="skill-bar">
+					<div class="skill-per" per = 60></div>
+				</div>
+			</div>
+			<div class="skill">
+				<div class="skill-name">Java</div>
+				<div class="skill-bar">
+					<div class="skill-per" per = 50></div>
+				</div>
+			</div>
+			<div class="skill">
+				<div class="skill-name">HTML/CSS</div>
+				<div class="skill-bar">
+					<div class="skill-per" per = 50></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('.skill-per').each(function(){
+			var $this = $(this)
+			var per = $this.attr('per')
+			$this.css("width",per+'%')
+			$({animatedValue:0}).animate({animatedValue:per},{
+				duration:1000,
+				step:function(){
+					$this.attr('per',Math.floor(this.animatedValue)+'%');
+				},
+				complete:function(){
+					$this.attr('per',Math.floor(this.animatedValue)+'%');
+				},
+			});
+		});
+	</script>
+</body>
+</html>
