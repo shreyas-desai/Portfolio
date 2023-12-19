@@ -73,6 +73,7 @@ body{
 #projects p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  text-align: justify;
 }
 #contact {
   height: 100vh;
@@ -169,7 +170,9 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,a:hover{
+nav a.active,
+nav a:hover,
+nav a:focus{
   background: black;
   color: white;
   transition: 0.5s;
@@ -381,8 +384,11 @@ footer{
 .right-side .button input[type="button"]:hover{
   background: grey;
 }
+.social-icons a.email{
+  color: white;
+}
 .social-icons a.email:hover{
-  color: #D44638;;
+  color: #D44638;
 }
 .social-icons a.github:hover{
   color: #211F1F;
@@ -393,12 +399,16 @@ footer{
 .social-icons a.instagram:hover{
   color: #E4405F;
 }
-.social-icons a.active,a:hover{
+.social-icons a.active,
+.social-icons a:hover,
+.social-icons a:focus{
   background: none;
   color: white;
-  transition: 0.5s;
+  transition: 0.1s;
 }
-
+.social-icons a:visited {
+  color: inherit;
+}
 
 .right-side .input-box input, .right-side .input-box textarea{
   height: 100%;
