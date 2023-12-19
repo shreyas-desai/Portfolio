@@ -54,7 +54,8 @@ body{
   justify-content: left;
   align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: 5px;
+  padding-bottom: 0px;
   color: #3498db;
 }
 
@@ -143,7 +144,59 @@ body{
   text-align: left; /* Align text to the left */
 }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+.project {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  background-color: #ffffff; /* Adjust the background color as needed */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  text-align: justify;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.project a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000; /* Adjust the text color */
+  text-decoration: none;
+}
+
+.project a:hover {
+  color: #3498db; /* Change the color on hover */
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.view-project-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
 nav {
   height: 80px;
   width: 100%;
