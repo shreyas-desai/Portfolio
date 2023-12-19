@@ -293,11 +293,10 @@ footer{
   margin: auto;
   position: realtive;
   width: 80%;
-  background: #000;
   margin-top: 40px;
   padding: 10px;
   border-radius: 6px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0,0.2);
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0,0.2); */
 }
 .contact .content{
   display: flex;
@@ -382,7 +381,18 @@ footer{
 .right-side .button input[type="button"]:hover{
   background: grey;
 }
-
+.social-icons a.email:hover{
+  color: #D44638;;
+}
+.social-icons a.github:hover{
+  color: #211F1F;
+}
+.social-icons a.linkedin:hover{
+  color: #0077B5;
+}
+.social-icons a.instagram:hover{
+  color: #E4405F;
+}
 .right-side .input-box input, .right-side .input-box textarea{
   height: 100%;
   width: 100%;
