@@ -13,6 +13,108 @@ body{
   background-color: #3e3f42;
   background-size: 105%;
 }
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+#home h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+#about h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+#projects h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#projects p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+#contact h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#workex {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+#workex h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#workex p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
 .content{
   margin-left: 15px;
   margin-right: 15px;
@@ -31,12 +133,18 @@ body{
   font-family: 'arial';
 
 }
-nav{
+nav {
   height: 80px;
   width: 100%;
-  background:  #fff;
-  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  transition: top 0.3s ease; /* Added transition property */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
 }
+
 label.logo{
   color: black;
   font-size: 35px;

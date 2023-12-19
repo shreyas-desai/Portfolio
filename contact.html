@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Portfolio Website</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Add your custom styles here */
+	</style>
 </head>
 <body class="contact-body">
 	<nav>
@@ -17,8 +20,9 @@
 		<ul>
 			<li><a href='index.html'>Home</a></li>
 			<li><a href='about.html'>About</a></li>
-			<li><a href='projects.html'>Projects and Works</a></li>
+			<li><a href='projects.html'>Projects</a></li>
 			<li><a href='contact.html' class='active'>Contact</a></li>
+			<li><a href='workex.html'>Work Experience</a></li>
 		</ul>
 	</nav>
 	<div class="contact">
@@ -43,25 +47,26 @@
 			</div>
 			<div class="right-side">
 				<div class="topic-text">Send me a message</div>
-				<p>If you like my work please send me a feedback, it would really boost my morale. Even if you don't like my work, I take my critics sportingly. So if you find a mistake and would like to give me a suggestion, please leave a comment below🙂</p>
+				<p>If you like my work, please send me feedback; it would really boost my morale. Even if you don't like my work, I take criticism sportingly. If you find a mistake and would like to give me a suggestion, please leave a comment below🙂</p>
 			
-			<form action="#">
-				<div class="input-box">
-					<input type="text" placeholder="Enter Your name">
-				</div>
-				<div class="input-box">
-					<input type="text" placeholder="Enter Your email">
-				</div>
-				<div class="input-box message-box">
-					<textarea ></textarea>
-				</div>
-				<div class="button">
-					<input type="button" value="Send Now">
-				</div>
-			</form>
+				<form id="contactForm">
+					<div class="input-box">
+						<input type="text" id="name" placeholder="Enter Your name" required>
+					</div>
+					<div class="input-box">
+						<input type="email" id="email" placeholder="Enter Your email" required>
+					</div>
+					<div class="input-box message-box">
+						<textarea id="message" required></textarea>
+					</div>
+					<div class="button">
+						<input type="button" value="Send Now" onclick="sendMessage()">
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
 	<footer>The website is not quite responsive yet. I recommend opening the website on a laptop or a tablet.(PS.: I am still working on its responsiveness😓)</footer>
+
 </body>
 </html>
