@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="index.js" defer></script>
     <style>
         /* Custom styles can be added here if needed */
     </style>
@@ -16,10 +22,10 @@
         <label class="logo">Shreyas Desai</label>
         <ul>
             <li><a href='#home'>Home</a></li>
-            <!-- <li><a href='#about'>About</a></li> -->
+            <li><a href='#workex'>Work Experience</a></li>
             <li><a href='#projects'>Projects</a></li>
             <li><a href='#contact'>Contact</a></li>
-            <li><a href='#workex'>Work Experience</a></li>
+            
         </ul>
     </nav>
 
@@ -29,8 +35,47 @@
 		<p>I am a Computer Science graduate, studying in Stevens Institute of Technology, Hoboken, NJ. I am actively searching for summer internship opportunities in the Machine Learning, Data Science and Backend Software Development. </p>
 		<p>Explore my projects and works to get insights into my skills and capabilities. Your journey into my portfolio starts here.</p>
 		<p>Feel free to connect with me via the provided links to my GitHub and LinkedIn profiles. Let's innovate and build together!</p>
+        <p><a href="Shreyas_Desai_New.pdf" target="_blank" style="color: black;">
+            [resume]
+        </a></p>
 		
 	</div>
+
+    <div class="content" id="workex">
+        <!-- Swiper -->
+        <div class="swiper-container swiper-container--timeline">
+            <div class="swiper-wrapper">
+            <!-- Timeline items -->
+                <div class="swiper-slide">
+                    <div class="timeline-item">
+                    <div class="timeline-date">November 2021 - July 2023</div>
+                    <div class="timeline-content">Backend Python Developer @ Extrapreneurs India Pvt. LTD., Pune, MH, INDIA</div>
+                    <div class="timeline-content" style="text-align: justify;">Developed functional FastAPIs for services including Market Data collection, User Data management, and Bulk Data Load. </br>Maintained legacy Java APIs based on the SpringBoot framework and added updates for globalization and localization throughout the system. </br>Integrated and synchronized data between PostgreSQL and Salesforce, enhancing data accuracy and accessibility. </br>Utilized Salesforce Bulk Data API to directly load data from a third-party site to Salesforce Bulk Object, with AWS S3 Bucket backup. </br>Implemented successful data transfer to custom Salesforce objects using AWS serverless lambdas and AppFlows. </br>Demonstrated experience with Git CLI and Desktop for code version control.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timeline-item">
+                    <div class="timeline-date">August 2022 - February 2023</div>
+                    <div class="timeline-content">Data Engineering Intern @ Zineone INC (SessionAI), Mumbai, MH, INDIA</div>
+                    <div class="timeline-content" style="text-align: justify;">Recommendation System Specialist with expertise in leveraging LSTM models for personalized offer suggestions. </br>Conducted hyperparameter tuning to optimize model performance and implemented result visualization techniques for enhanced feature selection. </br>Proficient in managing data manipulation and feature extraction processes. </br>Led experiments and training of various ML regression models tailored for session-based user data. </br>Evaluated model inferences through comprehensive metric analysis. </br>Deployed models on MLFlow for rigorous testing and production environments.</br> Analyzed data from 60,000+ monthly active user sessions, providing valuable insights through data-driven analytics.</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="timeline-item">
+                    <div class="timeline-date">August 2021 - December 2022</div>
+                    <div class="timeline-content">Club Leader and Python Mentor @ DevDynasty - SUK, Kolhapur, MH, INDIA</div>
+                    <div class="timeline-content" style="text-align: justify;">Mentored peers and juniors in their journey of learning python from scratch. Tailored some notebooks and made them available to ease their learning journey.</br>
+                        <a href="https://github.com/shreyas-desai/DevDynasty-Codes">See the notebooks here</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+  
+    </div>
+    
 
     <div class="abt_body" id="projects">
 		<div class="skills">
@@ -58,8 +103,9 @@
     <div class="contact" id="contact">
 		<div class="content">
 			<div class="connect">
-				<div class="topic-text" style="font-size: 28px;">Let's Connect!</div>
+				<div class="topic-text" style="font-size: 28px;">Let's chat!</div></br>
 					<div class="text-one">+1(201)-492-8801</div></br>
+                    <div class="text-one">shreyasdesai3013@gmail.com</div></br>
 					<div class="social-icons">
 						<a class='email' href="mailto:shreyasdesai3013@gmail.com">
 							<i class="fas fa-envelope fa-4x"></i>
@@ -77,57 +123,11 @@
 							<i class="fab fa-instagram fa-4x"></i>
 						</a>
 					</div>
-				<p>If you like my work, let's connect on social media or send me an email. I'm active on Instagram. Feel free to text me on LinkedIn. Checkout my work on Github.</p>
+                </br>
+				<p>If you like my work, let's connect on social media or send me an email. Don't hesitate if you wanna talk about anime, cricket or just about life in general :D.</br> I'm active on Instagram. Feel free to text me on LinkedIn. Checkout my work on Github.</p>
 			</div>
 		</div>
 	</div>
 
-    <div id="workex">
-        <!-- Your Work Experience Content Goes Here -->
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        // Smooth scrolling script
-        $('a').on('click', function(event) {
-            if (this.hash !== '') {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            }
-        });
-
-        // Navbar hide/show on scroll script
-        let prevScrollPos = window.pageYOffset;
-        const navbar = document.getElementById('navbar');
-        let ticking = false;
-
-        function updateNavbar() {
-            let currentScrollPos = window.pageYOffset;
-
-            if (prevScrollPos > currentScrollPos) {
-                navbar.style.top = '0';
-            } else {
-                navbar.style.top = '-80px'; // Set the height of your navbar here
-            }
-
-            prevScrollPos = currentScrollPos;
-            ticking = false;
-        }
-
-        window.addEventListener('scroll', function() {
-            if (!ticking) {
-                window.requestAnimationFrame(function() {
-                    updateNavbar();
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-    </script>
 </body>
 </html>
