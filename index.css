@@ -13,6 +13,7 @@ body{
   font-family: monteserrat;
   background-color: #ecf0f1;
   background-size: 105%;
+  zoom: 100%;
 }
 #home {
   height: 100vh;
@@ -46,7 +47,11 @@ body{
   color: #3498db;
 }
 
-
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 #projects {
   height: 100vh;
   display: flex;
@@ -54,8 +59,6 @@ body{
   justify-content: left;
   align-items: center;
   text-align: center;
-  padding: 5px;
-  padding-bottom: 0px;
   color: #3498db;
 }
 
@@ -100,7 +103,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: 100px;
   color: #3498db;
 }
 
@@ -187,6 +190,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 20%;
   height: 100%;
 }
 
@@ -345,4 +349,11 @@ nav a:focus{
   height: 40px;
   margin: 0 8px; /* Adjust the margin as needed */
   background-color: #2980b9; /* Change the background color if needed */
+}
+
+@media screen and (max-width: 600px) {
+  /* Styles for screens with a maximum width of 600px */
+  .project {
+      width: 100%; /* Adjust styles for smaller screens */
+  }
 }
