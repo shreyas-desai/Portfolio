@@ -393,6 +393,11 @@ footer{
 .social-icons a.instagram:hover{
   color: #E4405F;
 }
+.social-icons a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
 .right-side .input-box input, .right-side .input-box textarea{
   height: 100%;
   width: 100%;
