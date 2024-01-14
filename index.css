@@ -23,7 +23,7 @@ body{
   align-items: center;
   text-align: center;
   padding: 50px;
-  color: #3498db;
+  color: black;
 }
 
 #home h1 {
@@ -44,7 +44,7 @@ body{
   align-items: center;
   text-align: center;
   padding: 50px;
-  color: #3498db;
+  color: black;
 }
 
 .skills {
@@ -59,7 +59,7 @@ body{
   justify-content: left;
   align-items: center;
   text-align: center;
-  color: #3498db;
+  color: black;
 }
 
 #projects h1 {
@@ -80,7 +80,7 @@ body{
   align-items: center;
   text-align: center;
   padding: 50px;
-  color: #3498db;
+  color: black;
 }
 
 #contact h1 {
@@ -104,7 +104,7 @@ body{
   align-items: center;
   text-align: center;
   padding: 100px;
-  color: #3498db;
+  color: black;
 }
 
 #workex h1 {
@@ -124,7 +124,7 @@ body{
   margin-right: 15px;
   position: relative;
   font-family: 'arial';
-  color: #3498db;
+  color: black;
   text-align: center;
   margin-top: 10px;
 }
@@ -183,7 +183,7 @@ body{
 }
 
 .project a:hover {
-  color: #3498db; /* Change the color on hover */
+  color: black; /* Change the color on hover */
 }
 
 .project-container {
@@ -214,7 +214,7 @@ nav {
 }
 
 label.logo{
-  color: #2980b9;
+  color: black;
   font-size: 35px;
   line-height: 80px;
   padding: 0 70px;
@@ -231,7 +231,7 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #2980b9;
+  color: #505253;
   font-size: 17px;
   padding: 7px;
   border-radius: 3px;
@@ -240,13 +240,13 @@ nav ul li a{
 nav a.active,
 nav a:hover,
 nav a:focus{
-  background: #2980b9;
+  background: #505253;
   color: white;
   transition: 0.5s;
 }
 
 .social-icons a{
-  color: #2980b9;
+  color: #505253;
 }
 
 .social-icons a.email:hover{
@@ -265,7 +265,7 @@ nav a:focus{
 .social-icons a:hover,
 .social-icons a:focus{
   background: none;
-  color: #3498db;
+  color: black;
   transition: 0.1s;
 }
 .social-icons a:visited {
@@ -279,7 +279,7 @@ nav a:focus{
 .timeline-date {
   font-size: 18px;
   font-weight: bold;
-  color: #3498db;
+  color: black;
   background-color: grey;
   padding: 10px;
   border-radius: 5px;
@@ -329,7 +329,7 @@ nav a:focus{
   top: -40px; /* Adjust as needed to position above the timeline */
   left: 50%;
   transform: translateX(-50%);
-  background-color: #2980b9;
+  background-color: #505253;
   color: white;
   padding: 8px;
   border-radius: 5px;
@@ -348,12 +348,51 @@ nav a:focus{
   width: 40px;
   height: 40px;
   margin: 0 8px; /* Adjust the margin as needed */
-  background-color: #2980b9; /* Change the background color if needed */
+  background-color: #505253; /* Change the background color if needed */
 }
 
 @media screen and (max-width: 600px) {
   /* Styles for screens with a maximum width of 600px */
   .project {
       width: 100%; /* Adjust styles for smaller screens */
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  #home,
+  #about,
+  #projects,
+  #contact,
+  #workex {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .profile img {
+    padding-top: 40px; /* Adjust padding for the profile image */
+  }
+
+  .project {
+    width: 100%; /* Adjust project width for smaller screens */
+  }
+
+  nav ul {
+    float: none;
+    margin-right: 0;
+    text-align: center; /* Center the navigation links */
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 40px; /* Adjust line height for smaller screens */
+    margin: 5px 0;
+  }
+
+  label.logo {
+    padding: 0 20px; /* Reduce padding for the logo */
+  }
+
+  .swiper-container--timeline .swiper-slide .timeline-date {
+    top: -30px; /* Adjust timeline date position for smaller screens */
   }
 }
