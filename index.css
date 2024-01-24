@@ -27,12 +27,12 @@ body{
 }
 
 #home h1 {
-  font-size: 2.5em;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
 #home p {
-  font-size: 1.2em;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
@@ -62,12 +62,12 @@ body{
 }
 
 #projects h1 {
-  font-size: 2.5em;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
 #projects p {
-  font-size: 1.2em;
+  font-size: 18px;
   margin-bottom: 20px;
   text-align: left;
 }
@@ -83,12 +83,12 @@ body{
 }
 
 #contact h1 {
-  font-size: 2.5em;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
 #contact p {
-  font-size: 1.2em;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 #contact .content{
@@ -107,12 +107,12 @@ body{
 }
 
 #workex h1 {
-  font-size: 2.5em;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
 #workex p {
-  font-size: 1.2em;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 .content {
@@ -144,6 +144,8 @@ body{
 
 .text-content {
   padding-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
   flex: 2; /* Take 2/3 of the available space */
   text-align: left; /* Align text to the left */
 }
@@ -168,12 +170,12 @@ body{
 }
 
 .project h3 {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .project p {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 15px;
   text-align: justify;
 }
@@ -205,7 +207,7 @@ body{
 }
 
 .view-project-link {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: black;
   text-decoration: none;
@@ -226,6 +228,7 @@ nav {
 label.logo{
   color: black;
   font-size: 35px;
+  margin-left: 150px;
   line-height: 80px;
   padding: 0 70px;
   font-weight: bold;
@@ -242,7 +245,7 @@ nav ul li{
 }
 nav ul li a{
   color: #505253;
-  font-size: 17px;
+  font-size: 18px;
   padding: 7px;
   border-radius: 3px;
   text-transform: uppercase;
